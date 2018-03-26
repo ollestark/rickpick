@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.laserbazooka.rickpick.SpinActivity"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <ImageView android:id="@+id/spinWheel"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/spinbottle2"
+        />
+
+    <TextView android:id="@+id/picked"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#D9000000"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+
+
+</LinearLayout>

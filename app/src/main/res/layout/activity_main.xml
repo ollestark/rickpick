@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="16dp"
+    android:background="@drawable/roulette1">
+
+    <EditText android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/edit_message"
+        android:background="#D9FFFFFF"
+        android:textColor="#000000"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:background="@drawable/nyaddknapp"
+        android:layout_below="@id/edit_message"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/centerPoint"
+        android:layout_toEndOf="@+id/centerPoint"/>
+
+    <TextView
+        android:id="@+id/centerPoint"
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <Button android:id="@+id/pickBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pick"
+        android:onClick="makePick"
+        android:layout_below="@id/edit_message"
+
+        android:layout_gravity="center"
+        android:background="@drawable/nypickknapp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/centerPoint"
+        android:layout_toLeftOf="@+id/centerPoint"/>
+
+
+
+
+    <ListView android:id="@+id/listView_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickBtn"
+        android:background="#D9FFFFFF"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000000"
+        />
+
+
+
+</RelativeLayout>

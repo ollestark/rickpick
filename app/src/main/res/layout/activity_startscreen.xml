@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="16dp"
+    android:background="@drawable/roulette1">
+
+    <Button android:id="@+id/randBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick"
+        android:background="@drawable/qustion"
+
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:gravity="center"
+        />
+
+    <Button android:id="@+id/diceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dice"
+        android:textSize="30dp"
+        android:layout_below="@id/randBtn"
+
+        android:layout_gravity="center"
+        android:background="@drawable/dice"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="15dp"
+        android:gravity="center"/>
+
+    <Button android:id="@+id/flipBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/flip"
+        android:textSize="30dp"
+        android:layout_below="@id/diceBtn"
+
+        android:layout_gravity="center"
+        android:background="@drawable/flip"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        />
+
+
+    <Button android:id="@+id/spinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/spin"
+        android:textSize="30dp"
+        android:layout_below="@id/flipBtn"
+
+        android:layout_gravity="center"
+        android:background="@drawable/bottle"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="15dp"
+        android:gravity="center"/>
+
+</RelativeLayout>
